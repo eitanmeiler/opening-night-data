@@ -1,0 +1,299 @@
+{
+  "project": "Opening Night: what predicts a box office opening now?",
+  "author": "Eitan Meiler",
+  "updated_utc": "2026-11-08T14:13:14Z",
+  "how_to_read": {
+    "ours": "Model forecast of the US opening weekend (Fri-Sun incl. previews), locked in before release. The 80% range should contain about 8 of every 10 actual openings.",
+    "hollywood": "Boxoffice Pro's last published pre-release forecast range; its midpoint is used for scoring.",
+    "miss": "|actual / forecast - 1|, in percent.",
+    "draft": "The Oct 23 films were scored on drafts committed Oct 20 (the one-week lock-in did not run).",
+    "provisional": "Graded on a Saturday projection; updated when Sunday estimates or final numbers arrive."
+  },
+  "summary": {
+    "films_graded": 4,
+    "films_graded_final": 3,
+    "our_median_miss_pct": 53.7,
+    "hollywood_median_miss_pct": 30.2,
+    "in_our_80pct_range": 2,
+    "head_to_head": {
+      "ours": 1,
+      "hollywood": 3,
+      "tie": 0
+    }
+  },
+  "films": [
+    {
+      "title": "Clayface",
+      "release_date": "2026-10-23",
+      "checkpoint": "T-28",
+      "locked_at_utc": "2026-10-20T18:58:06Z",
+      "kind": "draft",
+      "ours": {
+        "forecast_m": 20.9,
+        "low_m": 8.1,
+        "high_m": 48.8,
+        "model": "catboost_att"
+      },
+      "hollywood": {
+        "source": "Boxoffice Pro",
+        "published": "2026-10",
+        "low_m": 23.0,
+        "high_m": 33.0,
+        "mid_m": 28.0,
+        "url": "https://www.boxofficepro.com/long-range-forecast-october-marches-on-with-wildwood-clayface-klara-and-the-sun-and-ali-g-who-iz-i/",
+        "note": "Recorded after release from Boxoffice Pro's last pre-release range (backfilled)"
+      },
+      "actual": {
+        "m": 24.0,
+        "theaters": 3458,
+        "status": "sunday_estimate",
+        "source": "The Hollywood Reporter",
+        "url": "https://www.hollywoodreporter.com/movies/movie-news/clayface-box-office-you-can-see-everything-wildwood-1236739530/",
+        "as_of": "2026-10-25"
+      },
+      "grade": {
+        "our_miss_pct": 14.8,
+        "hollywood_miss_pct": 14.3,
+        "in_our_range": true,
+        "in_hollywood_range": true,
+        "closer": "hollywood",
+        "provisional": false
+      },
+      "status": "graded",
+      "side_case": false
+    },
+    {
+      "title": "Klara and the Sun",
+      "release_date": "2026-10-23",
+      "checkpoint": "T-28",
+      "locked_at_utc": "2026-10-20T18:58:06Z",
+      "kind": "draft",
+      "ours": {
+        "forecast_m": 9.8,
+        "low_m": 3.8,
+        "high_m": 22.9,
+        "model": "catboost_att"
+      },
+      "hollywood": {
+        "source": "Boxoffice Pro",
+        "published": "2026-10",
+        "low_m": 6.0,
+        "high_m": 10.0,
+        "mid_m": 8.0,
+        "url": "https://www.boxofficepro.com/long-range-forecast-october-marches-on-with-wildwood-clayface-klara-and-the-sun-and-ali-g-who-iz-i/",
+        "note": "Recorded after release from Boxoffice Pro's last pre-release range (backfilled)"
+      },
+      "actual": {
+        "m": 0.72,
+        "theaters": 880,
+        "status": "sunday_estimate",
+        "source": "The Hollywood Reporter",
+        "url": "https://www.hollywoodreporter.com/movies/movie-news/clayface-box-office-you-can-see-everything-wildwood-1236739530/",
+        "as_of": "2026-10-25"
+      },
+      "grade": {
+        "our_miss_pct": 92.6,
+        "hollywood_miss_pct": 90.9,
+        "in_our_range": false,
+        "in_hollywood_range": false,
+        "closer": "hollywood",
+        "provisional": false
+      },
+      "status": "graded",
+      "side_case": false
+    },
+    {
+      "title": "Wildwood",
+      "release_date": "2026-10-23",
+      "checkpoint": "T-28",
+      "locked_at_utc": "2026-10-20T18:58:06Z",
+      "kind": "draft",
+      "ours": {
+        "forecast_m": 10.2,
+        "low_m": 4.0,
+        "high_m": 23.8,
+        "model": "catboost_att"
+      },
+      "hollywood": {
+        "source": "Boxoffice Pro",
+        "published": "2026-10-09",
+        "low_m": 6.0,
+        "high_m": 10.0,
+        "mid_m": 8.0,
+        "url": "https://www.boxofficepro.com/long-range-forecast-october-marches-on-with-wildwood-clayface-klara-and-the-sun-and-ali-g-who-iz-i/",
+        "note": "Recorded after release from Boxoffice Pro's last pre-release range (backfilled)"
+      },
+      "actual": {
+        "m": 11.7,
+        "theaters": 2779,
+        "status": "sunday_estimate",
+        "source": "Dark Horizons / studio estimates",
+        "url": "https://www.darkhorizons.com/box-office-clayface-solid-wildwood-struggles/",
+        "as_of": "2026-10-25"
+      },
+      "grade": {
+        "our_miss_pct": 14.7,
+        "hollywood_miss_pct": 46.2,
+        "in_our_range": true,
+        "in_hollywood_range": false,
+        "closer": "ours",
+        "provisional": false
+      },
+      "status": "graded",
+      "side_case": false
+    },
+    {
+      "title": "Godzilla Minus Zero",
+      "release_date": "2026-11-06",
+      "checkpoint": "T-7",
+      "locked_at_utc": "2026-11-05T18:53:47Z",
+      "kind": "locked",
+      "ours": {
+        "forecast_m": 13.4,
+        "low_m": 7.6,
+        "high_m": 30.5,
+        "model": "catboost_att"
+      },
+      "hollywood": {
+        "source": "Boxoffice Pro",
+        "published": "2026-11",
+        "low_m": 25.0,
+        "high_m": 35.0,
+        "mid_m": 30.0,
+        "url": "https://www.boxofficepro.com/?p=46525",
+        "note": "Weekend forecast; backfilled"
+      },
+      "actual": {
+        "m": 32.0,
+        "theaters": 3254,
+        "status": "saturday_projection",
+        "source": "Deadline",
+        "url": "https://deadline.com/2026/11/box-office-godzilla-minus-zero-cat-in-the-hat-1237215161/",
+        "as_of": "2026-11-07"
+      },
+      "grade": {
+        "our_miss_pct": 138.8,
+        "hollywood_miss_pct": 6.7,
+        "in_our_range": false,
+        "in_hollywood_range": true,
+        "closer": "hollywood",
+        "provisional": true
+      },
+      "status": "graded",
+      "side_case": false
+    },
+    {
+      "title": "The Cat in the Hat",
+      "release_date": "2026-11-06",
+      "checkpoint": "T-7",
+      "locked_at_utc": "2026-11-05T18:53:47Z",
+      "kind": "locked",
+      "ours": {
+        "forecast_m": 19.6,
+        "low_m": 11.1,
+        "high_m": 44.4,
+        "model": "catboost_att"
+      },
+      "hollywood": {
+        "source": "Boxoffice Pro",
+        "published": "2026-11",
+        "low_m": 15.0,
+        "high_m": 20.0,
+        "mid_m": 17.5,
+        "url": "https://www.boxofficepro.com/?p=46525",
+        "note": "Weekend forecast (long-range had been $40-50M); backfilled"
+      },
+      "status": "awaiting_results",
+      "side_case": false
+    },
+    {
+      "title": "Wild Horse Nine",
+      "release_date": "2026-11-06",
+      "checkpoint": "T-28",
+      "locked_at_utc": "2026-11-05T18:53:47Z",
+      "kind": "locked",
+      "ours": {
+        "forecast_m": 6.2,
+        "low_m": 2.4,
+        "high_m": 14.5,
+        "model": "catboost_att"
+      },
+      "hollywood": {
+        "source": "Boxoffice Pro",
+        "published": "2026-10",
+        "low_m": 6.0,
+        "high_m": 10.0,
+        "mid_m": 8.0,
+        "url": "https://www.boxofficepro.com/long-range-forecast-monsters-make-their-way-to-the-big-screen-in-the-cat-in-the-hat-godzilla-minus-zero/",
+        "note": "Long-range forecast (not in the weekend top-3 preview); backfilled"
+      },
+      "status": "awaiting_results",
+      "side_case": true
+    },
+    {
+      "title": "Ghost Soldier",
+      "release_date": "2026-11-11",
+      "checkpoint": "T-28",
+      "kind": "draft",
+      "status": "upcoming",
+      "ours": {
+        "forecast_m": 4.0,
+        "low_m": 1.5,
+        "high_m": 9.2,
+        "model": "catboost_att"
+      }
+    },
+    {
+      "title": "Ebenezer",
+      "release_date": "2026-11-13",
+      "checkpoint": "T-28",
+      "kind": "draft",
+      "status": "upcoming",
+      "ours": {
+        "forecast_m": 16.1,
+        "low_m": 6.2,
+        "high_m": 37.6,
+        "model": "catboost_att"
+      }
+    },
+    {
+      "title": "How to Rob a Bank",
+      "release_date": "2026-11-13",
+      "checkpoint": "T-28",
+      "kind": "draft",
+      "status": "upcoming",
+      "ours": {
+        "forecast_m": 7.0,
+        "low_m": 2.7,
+        "high_m": 16.4,
+        "model": "catboost_att"
+      }
+    },
+    {
+      "title": "I Play Rocky",
+      "release_date": "2026-11-13",
+      "checkpoint": "T-28",
+      "kind": "draft",
+      "status": "upcoming",
+      "ours": {
+        "forecast_m": 8.9,
+        "low_m": 3.5,
+        "high_m": 20.9,
+        "model": "catboost_att"
+      }
+    },
+    {
+      "title": "The Hunger Games: Sunrise on the Reaping",
+      "release_date": "2026-11-20",
+      "checkpoint": "T-28",
+      "kind": "draft",
+      "status": "upcoming",
+      "ours": {
+        "forecast_m": 27.6,
+        "low_m": 8.4,
+        "high_m": 82.9,
+        "model": "ridge (attention window incomplete)"
+      }
+    }
+  ]
+}
