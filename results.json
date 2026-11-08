@@ -1,13 +1,16 @@
 {
   "project": "Opening Night: what predicts a box office opening now?",
   "author": "Eitan Meiler",
-  "updated_utc": "2026-11-08T14:13:14Z",
+  "updated_utc": "2026-11-08T14:44:13Z",
   "how_to_read": {
     "ours": "Model forecast of the US opening weekend (Fri-Sun incl. previews), locked in before release. The 80% range should contain about 8 of every 10 actual openings.",
     "hollywood": "Boxoffice Pro's last published pre-release forecast range; its midpoint is used for scoring.",
     "miss": "|actual / forecast - 1|, in percent.",
     "draft": "The Oct 23 films were scored on drafts committed Oct 20 (the one-week lock-in did not run).",
-    "provisional": "Graded on a Saturday projection; updated when Sunday estimates or final numbers arrive."
+    "provisional": "Graded on a Saturday projection; updated when Sunday estimates or final numbers arrive.",
+    "v2": "v1 x 1.37 for non-English films opening in 2,000+ theaters (a blind spot found in the backtest); otherwise equal to v1.",
+    "combined": "Geometric mean of our v1 forecast and Hollywood's midpoint; tests whether the two carry different information.",
+    "retro": "Computed after release for illustration; not part of the Amendment 7 test, which starts with the Nov 11 openings."
   },
   "summary": {
     "films_graded": 4,
@@ -19,6 +22,17 @@
       "ours": 1,
       "hollywood": 3,
       "tie": 0
+    },
+    "amendment7": {
+      "since": "2026-11-11",
+      "films": 0,
+      "median_miss_pct": {
+        "v1": null,
+        "v2": null,
+        "combined": null,
+        "hollywood": null
+      },
+      "note": "Pre-registered 2026-11-08 (HYPOTHESES.md Amendment 7). Films before this date show v2/Combined as 'retro' only."
     }
   },
   "films": [
@@ -43,6 +57,17 @@
         "url": "https://www.boxofficepro.com/long-range-forecast-october-marches-on-with-wildwood-clayface-klara-and-the-sun-and-ali-g-who-iz-i/",
         "note": "Recorded after release from Boxoffice Pro's last pre-release range (backfilled)"
       },
+      "v2": {
+        "forecast_m": 20.9,
+        "low_m": 8.1,
+        "high_m": 48.8,
+        "adjusted": false,
+        "basis": "retro"
+      },
+      "combined": {
+        "forecast_m": 24.2,
+        "basis": "retro"
+      },
       "actual": {
         "m": 24.0,
         "theaters": 3458,
@@ -57,7 +82,9 @@
         "in_our_range": true,
         "in_hollywood_range": true,
         "closer": "hollywood",
-        "provisional": false
+        "provisional": false,
+        "v2_miss_pct": 14.8,
+        "combined_miss_pct": 0.8
       },
       "status": "graded",
       "side_case": false
@@ -83,6 +110,17 @@
         "url": "https://www.boxofficepro.com/long-range-forecast-october-marches-on-with-wildwood-clayface-klara-and-the-sun-and-ali-g-who-iz-i/",
         "note": "Recorded after release from Boxoffice Pro's last pre-release range (backfilled)"
       },
+      "v2": {
+        "forecast_m": 9.8,
+        "low_m": 3.8,
+        "high_m": 22.9,
+        "adjusted": false,
+        "basis": "retro"
+      },
+      "combined": {
+        "forecast_m": 8.9,
+        "basis": "retro"
+      },
       "actual": {
         "m": 0.72,
         "theaters": 880,
@@ -97,7 +135,9 @@
         "in_our_range": false,
         "in_hollywood_range": false,
         "closer": "hollywood",
-        "provisional": false
+        "provisional": false,
+        "v2_miss_pct": 92.6,
+        "combined_miss_pct": 91.9
       },
       "status": "graded",
       "side_case": false
@@ -123,6 +163,17 @@
         "url": "https://www.boxofficepro.com/long-range-forecast-october-marches-on-with-wildwood-clayface-klara-and-the-sun-and-ali-g-who-iz-i/",
         "note": "Recorded after release from Boxoffice Pro's last pre-release range (backfilled)"
       },
+      "v2": {
+        "forecast_m": 10.2,
+        "low_m": 4.0,
+        "high_m": 23.8,
+        "adjusted": false,
+        "basis": "retro"
+      },
+      "combined": {
+        "forecast_m": 9.0,
+        "basis": "retro"
+      },
       "actual": {
         "m": 11.7,
         "theaters": 2779,
@@ -137,7 +188,9 @@
         "in_our_range": true,
         "in_hollywood_range": false,
         "closer": "ours",
-        "provisional": false
+        "provisional": false,
+        "v2_miss_pct": 14.7,
+        "combined_miss_pct": 30.0
       },
       "status": "graded",
       "side_case": false
@@ -163,6 +216,17 @@
         "url": "https://www.boxofficepro.com/?p=46525",
         "note": "Weekend forecast; backfilled"
       },
+      "v2": {
+        "forecast_m": 18.4,
+        "low_m": 10.4,
+        "high_m": 41.8,
+        "adjusted": true,
+        "basis": "retro"
+      },
+      "combined": {
+        "forecast_m": 20.0,
+        "basis": "retro"
+      },
       "actual": {
         "m": 32.0,
         "theaters": 3254,
@@ -177,7 +241,9 @@
         "in_our_range": false,
         "in_hollywood_range": true,
         "closer": "hollywood",
-        "provisional": true
+        "provisional": true,
+        "v2_miss_pct": 73.9,
+        "combined_miss_pct": 60.0
       },
       "status": "graded",
       "side_case": false
@@ -203,6 +269,17 @@
         "url": "https://www.boxofficepro.com/?p=46525",
         "note": "Weekend forecast (long-range had been $40-50M); backfilled"
       },
+      "v2": {
+        "forecast_m": 19.6,
+        "low_m": 11.1,
+        "high_m": 44.4,
+        "adjusted": false,
+        "basis": "retro"
+      },
+      "combined": {
+        "forecast_m": 18.5,
+        "basis": "retro"
+      },
       "status": "awaiting_results",
       "side_case": false
     },
@@ -226,6 +303,17 @@
         "mid_m": 8.0,
         "url": "https://www.boxofficepro.com/long-range-forecast-monsters-make-their-way-to-the-big-screen-in-the-cat-in-the-hat-godzilla-minus-zero/",
         "note": "Long-range forecast (not in the weekend top-3 preview); backfilled"
+      },
+      "v2": {
+        "forecast_m": 6.2,
+        "low_m": 2.4,
+        "high_m": 14.5,
+        "adjusted": false,
+        "basis": "retro"
+      },
+      "combined": {
+        "forecast_m": 7.0,
+        "basis": "retro"
       },
       "status": "awaiting_results",
       "side_case": true
