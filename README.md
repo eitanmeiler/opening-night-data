@@ -9,7 +9,7 @@ For each wide release this season, the file records:
 
 It also records who came closer.
 
-`results.json` is the only data file. It powers the Opening Night page on [meilerinteractive.com](https://meilerinteractive.com)
+`results.json` is the only data file. It powers the Opening Night page on [eitanmeiler.com](https://eitanmeiler.com/opening-night.html)
 and is updated automatically: forecasts are added before each opening, and results the weekend after.
 
 ## Why the git history matters
