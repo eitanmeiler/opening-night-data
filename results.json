@@ -1,7 +1,7 @@
 {
   "project": "Opening Night: what predicts a box office opening now?",
   "author": "Eitan Meiler",
-  "updated_utc": "2026-11-08T14:44:13Z",
+  "updated_utc": "2026-11-08T16:36:59Z",
   "how_to_read": {
     "ours": "Model forecast of the US opening weekend (Fri-Sun incl. previews), locked in before release. The 80% range should contain about 8 of every 10 actual openings.",
     "hollywood": "Boxoffice Pro's last published pre-release forecast range; its midpoint is used for scoring.",
@@ -13,13 +13,13 @@
     "retro": "Computed after release for illustration; not part of the Amendment 7 test, which starts with the Nov 11 openings."
   },
   "summary": {
-    "films_graded": 4,
-    "films_graded_final": 3,
-    "our_median_miss_pct": 53.7,
-    "hollywood_median_miss_pct": 30.2,
-    "in_our_80pct_range": 2,
+    "films_graded": 5,
+    "films_graded_final": 5,
+    "our_median_miss_pct": 14.8,
+    "hollywood_median_miss_pct": 14.3,
+    "in_our_80pct_range": 3,
     "head_to_head": {
-      "ours": 1,
+      "ours": 2,
       "hollywood": 3,
       "tie": 0
     },
@@ -228,22 +228,22 @@
         "basis": "retro"
       },
       "actual": {
-        "m": 32.0,
+        "m": 31.6,
         "theaters": 3254,
-        "status": "saturday_projection",
-        "source": "Deadline",
-        "url": "https://deadline.com/2026/11/box-office-godzilla-minus-zero-cat-in-the-hat-1237215161/",
-        "as_of": "2026-11-07"
+        "status": "sunday_estimate",
+        "source": "Variety",
+        "url": "https://variety.com/2026/film/box-office/godzilla-minus-zero-box-office-opening-weekend-cat-in-the-hat-fizzles-1236942363/",
+        "as_of": "2026-11-08"
       },
       "grade": {
-        "our_miss_pct": 138.8,
-        "hollywood_miss_pct": 6.7,
+        "our_miss_pct": 135.8,
+        "hollywood_miss_pct": 5.3,
         "in_our_range": false,
         "in_hollywood_range": true,
         "closer": "hollywood",
-        "provisional": true,
-        "v2_miss_pct": 73.9,
-        "combined_miss_pct": 60.0
+        "provisional": false,
+        "v2_miss_pct": 71.7,
+        "combined_miss_pct": 58.0
       },
       "status": "graded",
       "side_case": false
@@ -280,7 +280,25 @@
         "forecast_m": 18.5,
         "basis": "retro"
       },
-      "status": "awaiting_results",
+      "actual": {
+        "m": 20.0,
+        "theaters": 4003,
+        "status": "sunday_estimate",
+        "source": "Variety",
+        "url": "https://variety.com/2026/film/box-office/godzilla-minus-zero-box-office-opening-weekend-cat-in-the-hat-fizzles-1236942363/",
+        "as_of": "2026-11-08"
+      },
+      "grade": {
+        "our_miss_pct": 2.0,
+        "hollywood_miss_pct": 14.3,
+        "in_our_range": true,
+        "in_hollywood_range": true,
+        "closer": "ours",
+        "provisional": false,
+        "v2_miss_pct": 2.0,
+        "combined_miss_pct": 8.1
+      },
+      "status": "graded",
       "side_case": false
     },
     {
@@ -315,7 +333,25 @@
         "forecast_m": 7.0,
         "basis": "retro"
       },
-      "status": "awaiting_results",
+      "actual": {
+        "m": 6.0,
+        "theaters": 1100,
+        "status": "sunday_estimate",
+        "source": "Variety",
+        "url": "https://variety.com/2026/film/box-office/godzilla-minus-zero-box-office-opening-weekend-cat-in-the-hat-fizzles-1236942363/",
+        "as_of": "2026-11-08"
+      },
+      "grade": {
+        "our_miss_pct": 3.2,
+        "hollywood_miss_pct": 25.0,
+        "in_our_range": true,
+        "in_hollywood_range": true,
+        "closer": "ours",
+        "provisional": false,
+        "v2_miss_pct": 3.2,
+        "combined_miss_pct": 14.3
+      },
+      "status": "graded",
       "side_case": true
     },
     {
