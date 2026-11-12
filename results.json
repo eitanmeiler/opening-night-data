@@ -1,7 +1,7 @@
 {
   "project": "Opening Night: what predicts a box office opening now?",
   "author": "Eitan Meiler",
-  "updated_utc": "2026-11-12T17:22:52Z",
+  "updated_utc": "2026-11-12T17:24:18Z",
   "how_to_read": {
     "ours": "Model forecast of the US opening weekend (Fri-Sun incl. previews), locked in before release. The 80% range should contain about 8 of every 10 actual openings.",
     "hollywood": "Boxoffice Pro's last published pre-release forecast range; its midpoint is used for scoring.",
@@ -392,28 +392,72 @@
     {
       "title": "Ebenezer",
       "release_date": "2026-11-13",
-      "checkpoint": "T-28",
-      "kind": "draft",
-      "status": "upcoming",
+      "checkpoint": "T-7",
+      "locked_at_utc": "2026-11-12T17:23:51Z",
+      "kind": "locked",
       "ours": {
-        "forecast_m": 15.6,
-        "low_m": 6.0,
-        "high_m": 36.4,
+        "forecast_m": 15.4,
+        "low_m": 8.7,
+        "high_m": 34.9,
         "model": "catboost_att"
-      }
+      },
+      "hollywood": {
+        "source": "Boxoffice Pro",
+        "published": "2026-11-11",
+        "low_m": 20.0,
+        "high_m": 25.0,
+        "mid_m": 22.5,
+        "url": "https://www.boxofficepro.com/weekend-box-office-preview-johnny-depp-attempts-a-comeback-with-ebenezer/",
+        "note": "Weekend preview range; recorded pre-release 2026-11-12 (page 403 to fetch, read via search snippet)"
+      },
+      "v2": {
+        "forecast_m": 15.4,
+        "low_m": 8.7,
+        "high_m": 34.9,
+        "adjusted": false,
+        "basis": "locked"
+      },
+      "combined": {
+        "forecast_m": 18.6,
+        "basis": "locked"
+      },
+      "status": "awaiting_results",
+      "side_case": false
     },
     {
       "title": "How to Rob a Bank",
       "release_date": "2026-11-13",
       "checkpoint": "T-28",
-      "kind": "draft",
-      "status": "upcoming",
+      "locked_at_utc": "2026-11-12T17:23:51Z",
+      "kind": "locked",
       "ours": {
         "forecast_m": 7.3,
         "low_m": 2.8,
         "high_m": 17.1,
         "model": "catboost_att"
-      }
+      },
+      "hollywood": {
+        "source": "Boxoffice Pro",
+        "published": "2026-11-11",
+        "low_m": 6.0,
+        "high_m": 10.0,
+        "mid_m": 8.0,
+        "url": "https://www.boxofficepro.com/weekend-box-office-preview-johnny-depp-attempts-a-comeback-with-ebenezer/",
+        "note": "Weekend preview (tracking roughly $6-10M, grouped with Ghost Soldier; long-range had been $10-15M); recorded pre-release 2026-11-12 (page 403 to fetch, read via search snippet)"
+      },
+      "v2": {
+        "forecast_m": 7.3,
+        "low_m": 2.8,
+        "high_m": 17.1,
+        "adjusted": false,
+        "basis": "locked"
+      },
+      "combined": {
+        "forecast_m": 7.6,
+        "basis": "locked"
+      },
+      "status": "awaiting_results",
+      "side_case": false
     },
     {
       "title": "I Play Rocky",
