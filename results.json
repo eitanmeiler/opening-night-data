@@ -1,7 +1,7 @@
 {
   "project": "Opening Night: what predicts a box office opening now?",
   "author": "Eitan Meiler",
-  "updated_utc": "2026-11-10T16:40:16Z",
+  "updated_utc": "2026-11-12T17:22:52Z",
   "how_to_read": {
     "ours": "Model forecast of the US opening weekend (Fri-Sun incl. previews), locked in before release. The 80% range should contain about 8 of every 10 actual openings.",
     "hollywood": "Boxoffice Pro's last published pre-release forecast range; its midpoint is used for scoring.",
@@ -16,7 +16,7 @@
     "films_graded": 5,
     "films_graded_final": 5,
     "our_median_miss_pct": 14.8,
-    "hollywood_median_miss_pct": 17.1,
+    "hollywood_median_miss_pct": 14.3,
     "in_our_80pct_range": 3,
     "head_to_head": {
       "ours": 2,
@@ -228,22 +228,22 @@
         "basis": "retro"
       },
       "actual": {
-        "m": 31.6,
+        "m": 30.63,
         "theaters": 3254,
-        "status": "sunday_estimate",
-        "source": "Variety",
-        "url": "https://variety.com/2026/film/box-office/godzilla-minus-zero-box-office-opening-weekend-cat-in-the-hat-fizzles-1236942363/",
-        "as_of": "2026-11-08"
+        "status": "bom_actual",
+        "source": "Box Office Mojo (actuals)",
+        "url": "https://www.boxofficemojo.com/weekend/2026W45/",
+        "as_of": "2026-11-12"
       },
       "grade": {
-        "our_miss_pct": 135.8,
-        "hollywood_miss_pct": 5.3,
+        "our_miss_pct": 128.6,
+        "hollywood_miss_pct": 2.1,
         "in_our_range": false,
         "in_hollywood_range": true,
         "closer": "hollywood",
         "provisional": false,
-        "v2_miss_pct": 71.7,
-        "combined_miss_pct": 58.0
+        "v2_miss_pct": 66.5,
+        "combined_miss_pct": 53.1
       },
       "status": "graded",
       "side_case": false
@@ -281,22 +281,22 @@
         "basis": "retro"
       },
       "actual": {
-        "m": 20.5,
+        "m": 20.0,
         "theaters": 4003,
-        "status": "sunday_estimate",
-        "source": "Box Office Mojo (estimates)",
+        "status": "bom_actual",
+        "source": "Box Office Mojo (actuals)",
         "url": "https://www.boxofficemojo.com/weekend/2026W45/",
-        "as_of": "2026-11-09"
+        "as_of": "2026-11-12"
       },
       "grade": {
-        "our_miss_pct": 4.6,
-        "hollywood_miss_pct": 17.1,
+        "our_miss_pct": 2.1,
+        "hollywood_miss_pct": 14.3,
         "in_our_range": true,
         "in_hollywood_range": false,
         "closer": "ours",
         "provisional": false,
-        "v2_miss_pct": 4.6,
-        "combined_miss_pct": 10.8
+        "v2_miss_pct": 2.1,
+        "combined_miss_pct": 8.1
       },
       "status": "graded",
       "side_case": false
@@ -334,22 +334,22 @@
         "basis": "retro"
       },
       "actual": {
-        "m": 6.0,
+        "m": 5.91,
         "theaters": 1100,
-        "status": "sunday_estimate",
-        "source": "Variety",
-        "url": "https://variety.com/2026/film/box-office/godzilla-minus-zero-box-office-opening-weekend-cat-in-the-hat-fizzles-1236942363/",
-        "as_of": "2026-11-08"
+        "status": "bom_actual",
+        "source": "Box Office Mojo (actuals)",
+        "url": "https://www.boxofficemojo.com/weekend/2026W45/",
+        "as_of": "2026-11-12"
       },
       "grade": {
-        "our_miss_pct": 3.2,
-        "hollywood_miss_pct": 25.0,
+        "our_miss_pct": 4.7,
+        "hollywood_miss_pct": 26.2,
         "in_our_range": true,
-        "in_hollywood_range": true,
+        "in_hollywood_range": false,
         "closer": "ours",
         "provisional": false,
-        "v2_miss_pct": 3.2,
-        "combined_miss_pct": 14.3
+        "v2_miss_pct": 4.7,
+        "combined_miss_pct": 15.6
       },
       "status": "graded",
       "side_case": true
@@ -439,6 +439,32 @@
         "low_m": 10.2,
         "high_m": 61.7,
         "model": "catboost_att"
+      }
+    },
+    {
+      "title": "Focker-in-Law",
+      "release_date": "2026-11-25",
+      "checkpoint": "T-28",
+      "kind": "draft",
+      "status": "upcoming",
+      "ours": {
+        "forecast_m": 22.6,
+        "low_m": 6.9,
+        "high_m": 67.9,
+        "model": "ridge (attention window incomplete)"
+      }
+    },
+    {
+      "title": "Hexed",
+      "release_date": "2026-11-25",
+      "checkpoint": "T-28",
+      "kind": "draft",
+      "status": "upcoming",
+      "ours": {
+        "forecast_m": 25.4,
+        "low_m": 7.8,
+        "high_m": 76.2,
+        "model": "ridge (attention window incomplete)"
       }
     }
   ]
