@@ -1,7 +1,7 @@
 {
   "project": "Opening Night: what predicts a box office opening now?",
   "author": "Eitan Meiler",
-  "updated_utc": "2026-11-12T17:24:18Z",
+  "updated_utc": "2026-11-15T16:38:30Z",
   "how_to_read": {
     "ours": "Model forecast of the US opening weekend (Fri-Sun incl. previews), locked in before release. The 80% range should contain about 8 of every 10 actual openings.",
     "hollywood": "Boxoffice Pro's last published pre-release forecast range; its midpoint is used for scoring.",
@@ -13,24 +13,24 @@
     "retro": "Computed after release for illustration; not part of the Amendment 7 test, which starts with the Nov 11 openings."
   },
   "summary": {
-    "films_graded": 5,
-    "films_graded_final": 5,
-    "our_median_miss_pct": 14.8,
-    "hollywood_median_miss_pct": 14.3,
-    "in_our_80pct_range": 3,
+    "films_graded": 7,
+    "films_graded_final": 7,
+    "our_median_miss_pct": 23.4,
+    "hollywood_median_miss_pct": 15.6,
+    "in_our_80pct_range": 5,
     "head_to_head": {
-      "ours": 2,
-      "hollywood": 3,
+      "ours": 3,
+      "hollywood": 4,
       "tie": 0
     },
     "amendment7": {
       "since": "2026-11-11",
-      "films": 0,
+      "films": 2,
       "median_miss_pct": {
-        "v1": null,
-        "v2": null,
-        "combined": null,
-        "hollywood": null
+        "v1": 27.4,
+        "v2": 27.4,
+        "combined": 18.2,
+        "hollywood": 26.6
       },
       "note": "Pre-registered 2026-11-08 (HYPOTHESES.md Amendment 7). Films before this date show v2/Combined as 'retro' only."
     }
@@ -421,7 +421,25 @@
         "forecast_m": 18.6,
         "basis": "locked"
       },
-      "status": "awaiting_results",
+      "actual": {
+        "m": 19.0,
+        "theaters": 3535,
+        "status": "sunday_estimate",
+        "source": "Variety (studio Sunday estimates)",
+        "url": "https://variety.com/2026/film/box-office/ebenezer-box-office-johnny-depp-opening-weekend-how-to-rob-a-bank-1236948055/",
+        "as_of": "2026-11-15"
+      },
+      "grade": {
+        "our_miss_pct": 23.4,
+        "hollywood_miss_pct": 15.6,
+        "in_our_range": true,
+        "in_hollywood_range": false,
+        "closer": "hollywood",
+        "provisional": false,
+        "v2_miss_pct": 23.4,
+        "combined_miss_pct": 2.2
+      },
+      "status": "graded",
       "side_case": false
     },
     {
@@ -456,7 +474,25 @@
         "forecast_m": 7.6,
         "basis": "locked"
       },
-      "status": "awaiting_results",
+      "actual": {
+        "m": 5.0,
+        "theaters": null,
+        "status": "sunday_estimate",
+        "source": "Variety (studio Sunday estimates)",
+        "url": "https://variety.com/2026/film/box-office/ebenezer-box-office-johnny-depp-opening-weekend-how-to-rob-a-bank-1236948055/",
+        "as_of": "2026-11-15"
+      },
+      "grade": {
+        "our_miss_pct": 31.5,
+        "hollywood_miss_pct": 37.5,
+        "in_our_range": true,
+        "in_hollywood_range": false,
+        "closer": "ours",
+        "provisional": false,
+        "v2_miss_pct": 31.5,
+        "combined_miss_pct": 34.2
+      },
+      "status": "graded",
       "side_case": false
     },
     {
