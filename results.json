@@ -1,7 +1,7 @@
 {
   "project": "Opening Night: what predicts a box office opening now?",
   "author": "Eitan Meiler",
-  "updated_utc": "2026-11-15T16:38:30Z",
+  "updated_utc": "2026-11-16T20:03:17Z",
   "how_to_read": {
     "ours": "Model forecast of the US opening weekend (Fri-Sun incl. previews), locked in before release. The 80% range should contain about 8 of every 10 actual openings.",
     "hollywood": "Boxoffice Pro's last published pre-release forecast range; its midpoint is used for scoring.",
@@ -13,24 +13,24 @@
     "retro": "Computed after release for illustration; not part of the Amendment 7 test, which starts with the Nov 11 openings."
   },
   "summary": {
-    "films_graded": 7,
-    "films_graded_final": 7,
-    "our_median_miss_pct": 23.4,
-    "hollywood_median_miss_pct": 15.6,
-    "in_our_80pct_range": 5,
+    "films_graded": 8,
+    "films_graded_final": 8,
+    "our_median_miss_pct": 19.1,
+    "hollywood_median_miss_pct": 25.4,
+    "in_our_80pct_range": 6,
     "head_to_head": {
-      "ours": 3,
+      "ours": 4,
       "hollywood": 4,
       "tie": 0
     },
     "amendment7": {
       "since": "2026-11-11",
-      "films": 2,
+      "films": 3,
       "median_miss_pct": {
-        "v1": 27.4,
-        "v2": 27.4,
-        "combined": 18.2,
-        "hollywood": 26.6
+        "v1": 23.4,
+        "v2": 23.4,
+        "combined": 29.4,
+        "hollywood": 35.3
       },
       "note": "Pre-registered 2026-11-08 (HYPOTHESES.md Amendment 7). Films before this date show v2/Combined as 'retro' only."
     }
@@ -386,7 +386,25 @@
         "forecast_m": 5.3,
         "basis": "locked"
       },
-      "status": "awaiting_results",
+      "actual": {
+        "m": 3.74,
+        "theaters": 2558,
+        "status": "bom_actual",
+        "source": "Box Office Mojo (actuals; Fri-Sun of Wed opener, 5-day 6.849)",
+        "url": "https://www.boxofficemojo.com/weekend/2026W46/",
+        "as_of": "2026-11-16"
+      },
+      "grade": {
+        "our_miss_pct": 6.5,
+        "hollywood_miss_pct": 46.6,
+        "in_our_range": true,
+        "in_hollywood_range": false,
+        "closer": "ours",
+        "provisional": false,
+        "v2_miss_pct": 6.5,
+        "combined_miss_pct": 29.4
+      },
+      "status": "graded",
       "side_case": false
     },
     {
@@ -475,22 +493,22 @@
         "basis": "locked"
       },
       "actual": {
-        "m": 5.0,
-        "theaters": null,
+        "m": 5.17,
+        "theaters": 2810,
         "status": "sunday_estimate",
-        "source": "Variety (studio Sunday estimates)",
-        "url": "https://variety.com/2026/film/box-office/ebenezer-box-office-johnny-depp-opening-weekend-how-to-rob-a-bank-1236948055/",
-        "as_of": "2026-11-15"
+        "source": "Box Office Mojo (weekend estimates)",
+        "url": "https://www.boxofficemojo.com/weekend/2026W46/",
+        "as_of": "2026-11-16"
       },
       "grade": {
-        "our_miss_pct": 31.5,
-        "hollywood_miss_pct": 37.5,
+        "our_miss_pct": 29.1,
+        "hollywood_miss_pct": 35.3,
         "in_our_range": true,
         "in_hollywood_range": false,
         "closer": "ours",
         "provisional": false,
-        "v2_miss_pct": 31.5,
-        "combined_miss_pct": 34.2
+        "v2_miss_pct": 29.1,
+        "combined_miss_pct": 31.9
       },
       "status": "graded",
       "side_case": false
