@@ -1,7 +1,7 @@
 {
   "project": "Opening Night: what predicts a box office opening now?",
   "author": "Eitan Meiler",
-  "updated_utc": "2026-11-16T20:03:17Z",
+  "updated_utc": "2026-11-18T15:21:02Z",
   "how_to_read": {
     "ours": "Model forecast of the US opening weekend (Fri-Sun incl. previews), locked in before release. The 80% range should contain about 8 of every 10 actual openings.",
     "hollywood": "Boxoffice Pro's last published pre-release forecast range; its midpoint is used for scoring.",
@@ -10,6 +10,8 @@
     "provisional": "Graded on a Saturday projection; updated when Sunday estimates or final numbers arrive.",
     "v2": "v1 x 1.37 for non-English films opening in 2,000+ theaters (a blind spot found in the backtest); otherwise equal to v1.",
     "combined": "Geometric mean of our v1 forecast and Hollywood's midpoint; tests whether the two carry different information.",
+    "matched": "Our forecast given Hollywood's range width (same high/low ratio), so 'inside the range' compares aim, not width.",
+    "gap_ratio": "Our median miss divided by Hollywood's: how far free public data is from paid tracking (1.0 = level).",
     "retro": "Computed after release for illustration; not part of the Amendment 7 test, which starts with the Nov 11 openings."
   },
   "summary": {
@@ -33,6 +35,46 @@
         "hollywood": 35.3
       },
       "note": "Pre-registered 2026-11-08 (HYPOTHESES.md Amendment 7). Films before this date show v2/Combined as 'retro' only."
+    },
+    "amendment8": {
+      "since": "2026-11-18",
+      "clean": {
+        "films": 0,
+        "equal_width_hits": {
+          "ours": 0,
+          "hollywood": 0
+        },
+        "closer": {
+          "ours": 0,
+          "hollywood": 0
+        },
+        "median_miss_pct": {
+          "ours": null,
+          "hollywood": null,
+          "combined": null
+        },
+        "gap_ratio": null,
+        "combined_beats_hollywood": null
+      },
+      "retro": {
+        "films": 8,
+        "equal_width_hits": {
+          "ours": 4,
+          "hollywood": 2
+        },
+        "closer": {
+          "ours": 4,
+          "hollywood": 4
+        },
+        "median_miss_pct": {
+          "ours": 19.1,
+          "hollywood": 25.4,
+          "combined": 29.7
+        },
+        "gap_ratio": 0.75,
+        "combined_beats_hollywood": false
+      },
+      "note": "Pre-registered 2026-11-17 (HYPOTHESES.md Amendment 8). Equal-width test: our forecast given Hollywood's range width. Films before Nov 18 are retro, outside the clean totals."
     }
   },
   "films": [
@@ -42,11 +84,18 @@
       "checkpoint": "T-28",
       "locked_at_utc": "2026-10-20T18:58:06Z",
       "kind": "draft",
+      "git_commit": "a9dc678",
       "ours": {
         "forecast_m": 20.9,
         "low_m": 8.1,
         "high_m": 48.8,
-        "model": "catboost_att"
+        "model": "catboost_att",
+        "matched": {
+          "low_m": 17.4,
+          "high_m": 25.0,
+          "width_ratio": 1.43
+        },
+        "days_before": 3
       },
       "hollywood": {
         "source": "Boxoffice Pro",
@@ -55,7 +104,8 @@
         "high_m": 33.0,
         "mid_m": 28.0,
         "url": "https://www.boxofficepro.com/long-range-forecast-october-marches-on-with-wildwood-clayface-klara-and-the-sun-and-ali-g-who-iz-i/",
-        "note": "Recorded after release from Boxoffice Pro's last pre-release range (backfilled)"
+        "note": "Recorded after release from Boxoffice Pro's last pre-release range (backfilled)",
+        "days_before": null
       },
       "v2": {
         "forecast_m": 20.9,
@@ -81,6 +131,7 @@
         "hollywood_miss_pct": 14.3,
         "in_our_range": true,
         "in_hollywood_range": true,
+        "in_our_matched_range": true,
         "closer": "hollywood",
         "provisional": false,
         "v2_miss_pct": 14.8,
@@ -95,11 +146,18 @@
       "checkpoint": "T-28",
       "locked_at_utc": "2026-10-20T18:58:06Z",
       "kind": "draft",
+      "git_commit": "a9dc678",
       "ours": {
         "forecast_m": 9.8,
         "low_m": 3.8,
         "high_m": 22.9,
-        "model": "catboost_att"
+        "model": "catboost_att",
+        "matched": {
+          "low_m": 7.6,
+          "high_m": 12.7,
+          "width_ratio": 1.67
+        },
+        "days_before": 3
       },
       "hollywood": {
         "source": "Boxoffice Pro",
@@ -108,7 +166,8 @@
         "high_m": 10.0,
         "mid_m": 8.0,
         "url": "https://www.boxofficepro.com/long-range-forecast-october-marches-on-with-wildwood-clayface-klara-and-the-sun-and-ali-g-who-iz-i/",
-        "note": "Recorded after release from Boxoffice Pro's last pre-release range (backfilled)"
+        "note": "Recorded after release from Boxoffice Pro's last pre-release range (backfilled)",
+        "days_before": null
       },
       "v2": {
         "forecast_m": 9.8,
@@ -122,7 +181,7 @@
         "basis": "retro"
       },
       "actual": {
-        "m": 0.72,
+        "m": 0.725,
         "theaters": 880,
         "status": "sunday_estimate",
         "source": "The Hollywood Reporter",
@@ -134,6 +193,7 @@
         "hollywood_miss_pct": 90.9,
         "in_our_range": false,
         "in_hollywood_range": false,
+        "in_our_matched_range": false,
         "closer": "hollywood",
         "provisional": false,
         "v2_miss_pct": 92.6,
@@ -148,11 +208,18 @@
       "checkpoint": "T-28",
       "locked_at_utc": "2026-10-20T18:58:06Z",
       "kind": "draft",
+      "git_commit": "a9dc678",
       "ours": {
         "forecast_m": 10.2,
         "low_m": 4.0,
         "high_m": 23.8,
-        "model": "catboost_att"
+        "model": "catboost_att",
+        "matched": {
+          "low_m": 7.9,
+          "high_m": 13.2,
+          "width_ratio": 1.67
+        },
+        "days_before": 3
       },
       "hollywood": {
         "source": "Boxoffice Pro",
@@ -161,7 +228,8 @@
         "high_m": 10.0,
         "mid_m": 8.0,
         "url": "https://www.boxofficepro.com/long-range-forecast-october-marches-on-with-wildwood-clayface-klara-and-the-sun-and-ali-g-who-iz-i/",
-        "note": "Recorded after release from Boxoffice Pro's last pre-release range (backfilled)"
+        "note": "Recorded after release from Boxoffice Pro's last pre-release range (backfilled)",
+        "days_before": 14
       },
       "v2": {
         "forecast_m": 10.2,
@@ -187,6 +255,7 @@
         "hollywood_miss_pct": 46.2,
         "in_our_range": true,
         "in_hollywood_range": false,
+        "in_our_matched_range": true,
         "closer": "ours",
         "provisional": false,
         "v2_miss_pct": 14.7,
@@ -201,11 +270,18 @@
       "checkpoint": "T-7",
       "locked_at_utc": "2026-11-05T18:53:47Z",
       "kind": "locked",
+      "git_commit": "b6969c6",
       "ours": {
         "forecast_m": 13.4,
         "low_m": 7.6,
         "high_m": 30.5,
-        "model": "catboost_att"
+        "model": "catboost_att",
+        "matched": {
+          "low_m": 11.3,
+          "high_m": 15.9,
+          "width_ratio": 1.4
+        },
+        "days_before": 1
       },
       "hollywood": {
         "source": "Boxoffice Pro",
@@ -214,7 +290,8 @@
         "high_m": 35.0,
         "mid_m": 30.0,
         "url": "https://www.boxofficepro.com/?p=46525",
-        "note": "Weekend forecast; backfilled"
+        "note": "Weekend forecast; backfilled",
+        "days_before": null
       },
       "v2": {
         "forecast_m": 18.4,
@@ -228,7 +305,7 @@
         "basis": "retro"
       },
       "actual": {
-        "m": 30.63,
+        "m": 30.628,
         "theaters": 3254,
         "status": "bom_actual",
         "source": "Box Office Mojo (actuals)",
@@ -240,6 +317,7 @@
         "hollywood_miss_pct": 2.1,
         "in_our_range": false,
         "in_hollywood_range": true,
+        "in_our_matched_range": false,
         "closer": "hollywood",
         "provisional": false,
         "v2_miss_pct": 66.5,
@@ -254,11 +332,18 @@
       "checkpoint": "T-7",
       "locked_at_utc": "2026-11-05T18:53:47Z",
       "kind": "locked",
+      "git_commit": "b6969c6",
       "ours": {
         "forecast_m": 19.6,
         "low_m": 11.1,
         "high_m": 44.4,
-        "model": "catboost_att"
+        "model": "catboost_att",
+        "matched": {
+          "low_m": 17.0,
+          "high_m": 22.6,
+          "width_ratio": 1.33
+        },
+        "days_before": 1
       },
       "hollywood": {
         "source": "Boxoffice Pro",
@@ -267,7 +352,8 @@
         "high_m": 20.0,
         "mid_m": 17.5,
         "url": "https://www.boxofficepro.com/?p=46525",
-        "note": "Weekend forecast (long-range had been $40-50M); backfilled"
+        "note": "Weekend forecast (long-range had been $40-50M); backfilled",
+        "days_before": null
       },
       "v2": {
         "forecast_m": 19.6,
@@ -281,7 +367,7 @@
         "basis": "retro"
       },
       "actual": {
-        "m": 20.0,
+        "m": 20.003,
         "theaters": 4003,
         "status": "bom_actual",
         "source": "Box Office Mojo (actuals)",
@@ -293,6 +379,7 @@
         "hollywood_miss_pct": 14.3,
         "in_our_range": true,
         "in_hollywood_range": false,
+        "in_our_matched_range": true,
         "closer": "ours",
         "provisional": false,
         "v2_miss_pct": 2.1,
@@ -307,11 +394,18 @@
       "checkpoint": "T-28",
       "locked_at_utc": "2026-11-05T18:53:47Z",
       "kind": "locked",
+      "git_commit": "b6969c6",
       "ours": {
         "forecast_m": 6.2,
         "low_m": 2.4,
         "high_m": 14.5,
-        "model": "catboost_att"
+        "model": "catboost_att",
+        "matched": {
+          "low_m": 4.8,
+          "high_m": 8.0,
+          "width_ratio": 1.67
+        },
+        "days_before": 1
       },
       "hollywood": {
         "source": "Boxoffice Pro",
@@ -320,7 +414,8 @@
         "high_m": 10.0,
         "mid_m": 8.0,
         "url": "https://www.boxofficepro.com/long-range-forecast-monsters-make-their-way-to-the-big-screen-in-the-cat-in-the-hat-godzilla-minus-zero/",
-        "note": "Long-range forecast (not in the weekend top-3 preview); backfilled"
+        "note": "Long-range forecast (not in the weekend top-3 preview); backfilled",
+        "days_before": null
       },
       "v2": {
         "forecast_m": 6.2,
@@ -334,7 +429,7 @@
         "basis": "retro"
       },
       "actual": {
-        "m": 5.91,
+        "m": 5.906,
         "theaters": 1100,
         "status": "bom_actual",
         "source": "Box Office Mojo (actuals)",
@@ -346,6 +441,7 @@
         "hollywood_miss_pct": 26.2,
         "in_our_range": true,
         "in_hollywood_range": false,
+        "in_our_matched_range": true,
         "closer": "ours",
         "provisional": false,
         "v2_miss_pct": 4.7,
@@ -360,11 +456,18 @@
       "checkpoint": "T-28",
       "locked_at_utc": "2026-11-10T16:39:42Z",
       "kind": "locked",
+      "git_commit": "04176b6",
       "ours": {
         "forecast_m": 4.0,
         "low_m": 1.5,
         "high_m": 9.2,
-        "model": "catboost_att"
+        "model": "catboost_att",
+        "matched": {
+          "low_m": 3.0,
+          "high_m": 5.4,
+          "width_ratio": 1.8
+        },
+        "days_before": 1
       },
       "hollywood": {
         "source": "Boxoffice Pro",
@@ -373,7 +476,8 @@
         "high_m": 9.0,
         "mid_m": 7.0,
         "url": "https://www.boxofficepro.com/long-range-forecast-will-moviegoers-say-ho-ho-ho-or-no-no-no-to-violent-night-2/",
-        "note": "Long-range table (Nov 11 row); recorded pre-release 2026-11-10; date approx (page 403 to fetch, read via search snippet)"
+        "note": "Long-range table (Nov 11 row); recorded pre-release 2026-11-10; date approx (page 403 to fetch, read via search snippet)",
+        "days_before": 2
       },
       "v2": {
         "forecast_m": 4.0,
@@ -399,6 +503,7 @@
         "hollywood_miss_pct": 46.6,
         "in_our_range": true,
         "in_hollywood_range": false,
+        "in_our_matched_range": true,
         "closer": "ours",
         "provisional": false,
         "v2_miss_pct": 6.5,
@@ -413,11 +518,18 @@
       "checkpoint": "T-7",
       "locked_at_utc": "2026-11-12T17:23:51Z",
       "kind": "locked",
+      "git_commit": "557e659",
       "ours": {
         "forecast_m": 15.4,
         "low_m": 8.7,
         "high_m": 34.9,
-        "model": "catboost_att"
+        "model": "catboost_att",
+        "matched": {
+          "low_m": 13.8,
+          "high_m": 17.2,
+          "width_ratio": 1.25
+        },
+        "days_before": 1
       },
       "hollywood": {
         "source": "Boxoffice Pro",
@@ -426,7 +538,8 @@
         "high_m": 25.0,
         "mid_m": 22.5,
         "url": "https://www.boxofficepro.com/weekend-box-office-preview-johnny-depp-attempts-a-comeback-with-ebenezer/",
-        "note": "Weekend preview range; recorded pre-release 2026-11-12 (page 403 to fetch, read via search snippet)"
+        "note": "Weekend preview range; recorded pre-release 2026-11-12 (page 403 to fetch, read via search snippet)",
+        "days_before": 2
       },
       "v2": {
         "forecast_m": 15.4,
@@ -452,6 +565,7 @@
         "hollywood_miss_pct": 15.6,
         "in_our_range": true,
         "in_hollywood_range": false,
+        "in_our_matched_range": false,
         "closer": "hollywood",
         "provisional": false,
         "v2_miss_pct": 23.4,
@@ -466,11 +580,18 @@
       "checkpoint": "T-28",
       "locked_at_utc": "2026-11-12T17:23:51Z",
       "kind": "locked",
+      "git_commit": "557e659",
       "ours": {
         "forecast_m": 7.3,
         "low_m": 2.8,
         "high_m": 17.1,
-        "model": "catboost_att"
+        "model": "catboost_att",
+        "matched": {
+          "low_m": 5.7,
+          "high_m": 9.4,
+          "width_ratio": 1.67
+        },
+        "days_before": 1
       },
       "hollywood": {
         "source": "Boxoffice Pro",
@@ -479,7 +600,8 @@
         "high_m": 10.0,
         "mid_m": 8.0,
         "url": "https://www.boxofficepro.com/weekend-box-office-preview-johnny-depp-attempts-a-comeback-with-ebenezer/",
-        "note": "Weekend preview (tracking roughly $6-10M, grouped with Ghost Soldier; long-range had been $10-15M); recorded pre-release 2026-11-12 (page 403 to fetch, read via search snippet)"
+        "note": "Weekend preview (tracking roughly $6-10M, grouped with Ghost Soldier; long-range had been $10-15M); recorded pre-release 2026-11-12 (page 403 to fetch, read via search snippet)",
+        "days_before": 2
       },
       "v2": {
         "forecast_m": 7.3,
@@ -493,7 +615,7 @@
         "basis": "locked"
       },
       "actual": {
-        "m": 5.17,
+        "m": 5.175,
         "theaters": 2810,
         "status": "sunday_estimate",
         "source": "Box Office Mojo (weekend estimates)",
@@ -505,6 +627,7 @@
         "hollywood_miss_pct": 35.3,
         "in_our_range": true,
         "in_hollywood_range": false,
+        "in_our_matched_range": false,
         "closer": "ours",
         "provisional": false,
         "v2_miss_pct": 29.1,
