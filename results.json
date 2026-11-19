@@ -1,7 +1,7 @@
 {
   "project": "Opening Night: what predicts a box office opening now?",
   "author": "Eitan Meiler",
-  "updated_utc": "2026-11-19T18:19:40Z",
+  "updated_utc": "2026-11-19T18:20:47Z",
   "how_to_read": {
     "ours": "Model forecast of the US opening weekend (Fri-Sun incl. previews), locked in before release. The 80% range should contain about 8 of every 10 actual openings.",
     "hollywood": "Boxoffice Pro's last published pre-release forecast range; its midpoint is used for scoring.",
@@ -652,15 +652,45 @@
     {
       "title": "The Hunger Games: Sunrise on the Reaping",
       "release_date": "2026-11-20",
-      "checkpoint": "T-28",
-      "kind": "draft",
-      "status": "upcoming",
+      "checkpoint": "T-7",
+      "locked_at_utc": "2026-11-19T18:20:24Z",
+      "kind": "locked",
+      "git_commit": "9770b0f",
       "ours": {
-        "forecast_m": 26.4,
-        "low_m": 10.2,
-        "high_m": 61.7,
-        "model": "catboost_att"
-      }
+        "forecast_m": 43.6,
+        "low_m": 24.7,
+        "high_m": 98.9,
+        "model": "catboost_att",
+        "matched": {
+          "low_m": 39.8,
+          "high_m": 47.8,
+          "width_ratio": 1.2
+        },
+        "days_before": 1
+      },
+      "hollywood": {
+        "source": "Boxoffice Pro",
+        "published": "2026-11",
+        "low_m": 100.0,
+        "high_m": 120.0,
+        "mid_m": 110.0,
+        "url": "https://www.boxofficepro.com/weekend-preview-hunger-games-sunrise-on-the-reaping-looking-at-100m-debut/",
+        "note": "Weekend preview range (long-range had been $55-65M); recorded pre-release 2026-11-19 (page 403 to fetch, read via search snippet); Deadline 2026-11-18: $90-120M at 3,900 theaters",
+        "days_before": null
+      },
+      "v2": {
+        "forecast_m": 43.6,
+        "low_m": 24.7,
+        "high_m": 98.9,
+        "adjusted": false,
+        "basis": "locked"
+      },
+      "combined": {
+        "forecast_m": 69.3,
+        "basis": "locked"
+      },
+      "status": "awaiting_results",
+      "side_case": false
     },
     {
       "title": "Focker-in-Law",
@@ -669,10 +699,10 @@
       "kind": "draft",
       "status": "upcoming",
       "ours": {
-        "forecast_m": 22.6,
-        "low_m": 6.9,
-        "high_m": 67.9,
-        "model": "ridge (attention window incomplete)"
+        "forecast_m": 30.6,
+        "low_m": 11.9,
+        "high_m": 71.6,
+        "model": "catboost_att"
       }
     },
     {
@@ -682,10 +712,10 @@
       "kind": "draft",
       "status": "upcoming",
       "ours": {
-        "forecast_m": 25.4,
-        "low_m": 7.8,
-        "high_m": 76.2,
-        "model": "ridge (attention window incomplete)"
+        "forecast_m": 34.4,
+        "low_m": 13.3,
+        "high_m": 80.3,
+        "model": "catboost_att"
       }
     }
   ]
