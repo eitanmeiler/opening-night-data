@@ -1,7 +1,7 @@
 {
   "project": "Opening Night: what predicts a box office opening now?",
   "author": "Eitan Meiler",
-  "updated_utc": "2026-11-18T15:21:02Z",
+  "updated_utc": "2026-11-19T18:19:40Z",
   "how_to_read": {
     "ours": "Model forecast of the US opening weekend (Fri-Sun incl. previews), locked in before release. The 80% range should contain about 8 of every 10 actual openings.",
     "hollywood": "Boxoffice Pro's last published pre-release forecast range; its midpoint is used for scoring.",
@@ -29,10 +29,10 @@
       "since": "2026-11-11",
       "films": 3,
       "median_miss_pct": {
-        "v1": 23.4,
-        "v2": 23.4,
+        "v1": 23.5,
+        "v2": 23.5,
         "combined": 29.4,
-        "hollywood": 35.3
+        "hollywood": 35.2
       },
       "note": "Pre-registered 2026-11-08 (HYPOTHESES.md Amendment 7). Films before this date show v2/Combined as 'retro' only."
     },
@@ -553,22 +553,22 @@
         "basis": "locked"
       },
       "actual": {
-        "m": 19.0,
+        "m": 19.012,
         "theaters": 3535,
-        "status": "sunday_estimate",
-        "source": "Variety (studio Sunday estimates)",
-        "url": "https://variety.com/2026/film/box-office/ebenezer-box-office-johnny-depp-opening-weekend-how-to-rob-a-bank-1236948055/",
-        "as_of": "2026-11-15"
+        "status": "bom_actual",
+        "source": "Box Office Mojo (actuals)",
+        "url": "https://www.boxofficemojo.com/weekend/2026W46/",
+        "as_of": "2026-11-19"
       },
       "grade": {
-        "our_miss_pct": 23.4,
-        "hollywood_miss_pct": 15.6,
+        "our_miss_pct": 23.5,
+        "hollywood_miss_pct": 15.5,
         "in_our_range": true,
         "in_hollywood_range": false,
         "in_our_matched_range": false,
         "closer": "hollywood",
         "provisional": false,
-        "v2_miss_pct": 23.4,
+        "v2_miss_pct": 23.5,
         "combined_miss_pct": 2.2
       },
       "status": "graded",
@@ -615,23 +615,23 @@
         "basis": "locked"
       },
       "actual": {
-        "m": 5.175,
+        "m": 5.186,
         "theaters": 2810,
-        "status": "sunday_estimate",
-        "source": "Box Office Mojo (weekend estimates)",
+        "status": "bom_actual",
+        "source": "Box Office Mojo (actuals)",
         "url": "https://www.boxofficemojo.com/weekend/2026W46/",
-        "as_of": "2026-11-16"
+        "as_of": "2026-11-19"
       },
       "grade": {
-        "our_miss_pct": 29.1,
-        "hollywood_miss_pct": 35.3,
+        "our_miss_pct": 29.0,
+        "hollywood_miss_pct": 35.2,
         "in_our_range": true,
         "in_hollywood_range": false,
         "in_our_matched_range": false,
         "closer": "ours",
         "provisional": false,
-        "v2_miss_pct": 29.1,
-        "combined_miss_pct": 31.9
+        "v2_miss_pct": 29.0,
+        "combined_miss_pct": 31.8
       },
       "status": "graded",
       "side_case": false
