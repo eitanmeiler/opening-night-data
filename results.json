@@ -1,7 +1,7 @@
 {
   "project": "Opening Night: what predicts a box office opening now?",
   "author": "Eitan Meiler",
-  "updated_utc": "2026-11-19T18:20:47Z",
+  "updated_utc": "2026-11-22T16:44:09Z",
   "how_to_read": {
     "ours": "Model forecast of the US opening weekend (Fri-Sun incl. previews), locked in before release. The 80% range should contain about 8 of every 10 actual openings.",
     "hollywood": "Boxoffice Pro's last published pre-release forecast range; its midpoint is used for scoring.",
@@ -15,46 +15,46 @@
     "retro": "Computed after release for illustration; not part of the Amendment 7 test, which starts with the Nov 11 openings."
   },
   "summary": {
-    "films_graded": 8,
-    "films_graded_final": 8,
-    "our_median_miss_pct": 19.1,
-    "hollywood_median_miss_pct": 25.4,
+    "films_graded": 9,
+    "films_graded_final": 9,
+    "our_median_miss_pct": 23.5,
+    "hollywood_median_miss_pct": 15.5,
     "in_our_80pct_range": 6,
     "head_to_head": {
       "ours": 4,
-      "hollywood": 4,
+      "hollywood": 5,
       "tie": 0
     },
     "amendment7": {
       "since": "2026-11-11",
-      "films": 3,
+      "films": 4,
       "median_miss_pct": {
-        "v1": 23.5,
-        "v2": 23.5,
-        "combined": 29.4,
-        "hollywood": 35.2
+        "v1": 26.2,
+        "v2": 26.2,
+        "combined": 30.6,
+        "hollywood": 25.4
       },
       "note": "Pre-registered 2026-11-08 (HYPOTHESES.md Amendment 7). Films before this date show v2/Combined as 'retro' only."
     },
     "amendment8": {
       "since": "2026-11-18",
       "clean": {
-        "films": 0,
+        "films": 1,
         "equal_width_hits": {
           "ours": 0,
-          "hollywood": 0
+          "hollywood": 1
         },
         "closer": {
           "ours": 0,
-          "hollywood": 0
+          "hollywood": 1
         },
         "median_miss_pct": {
-          "ours": null,
-          "hollywood": null,
-          "combined": null
+          "ours": 175.2,
+          "hollywood": 9.1,
+          "combined": 73.2
         },
-        "gap_ratio": null,
-        "combined_beats_hollywood": null
+        "gap_ratio": 19.25,
+        "combined_beats_hollywood": false
       },
       "retro": {
         "films": 8,
@@ -637,19 +637,6 @@
       "side_case": false
     },
     {
-      "title": "I Play Rocky",
-      "release_date": "2026-11-20",
-      "checkpoint": "T-28",
-      "kind": "draft",
-      "status": "upcoming",
-      "ours": {
-        "forecast_m": 9.7,
-        "low_m": 3.8,
-        "high_m": 22.7,
-        "model": "catboost_att"
-      }
-    },
-    {
       "title": "The Hunger Games: Sunrise on the Reaping",
       "release_date": "2026-11-20",
       "checkpoint": "T-7",
@@ -689,7 +676,26 @@
         "forecast_m": 69.3,
         "basis": "locked"
       },
-      "status": "awaiting_results",
+      "actual": {
+        "m": 120.0,
+        "theaters": 4108,
+        "status": "sunday_estimate",
+        "source": "Deadline Sunday estimate (via Forbes/Variety; theater count 4,108 per Deadline, Variety says 4,018)",
+        "url": "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/",
+        "as_of": "2026-11-22"
+      },
+      "grade": {
+        "our_miss_pct": 175.2,
+        "hollywood_miss_pct": 9.1,
+        "in_our_range": false,
+        "in_hollywood_range": true,
+        "in_our_matched_range": false,
+        "closer": "hollywood",
+        "provisional": false,
+        "v2_miss_pct": 175.2,
+        "combined_miss_pct": 73.2
+      },
+      "status": "graded",
       "side_case": false
     },
     {
