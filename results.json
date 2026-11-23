@@ -1,7 +1,7 @@
 {
   "project": "Opening Night: what predicts a box office opening now?",
   "author": "Eitan Meiler",
-  "updated_utc": "2026-11-22T16:44:09Z",
+  "updated_utc": "2026-11-23T18:04:14Z",
   "how_to_read": {
     "ours": "Model forecast of the US opening weekend (Fri-Sun incl. previews), locked in before release. The 80% range should contain about 8 of every 10 actual openings.",
     "hollywood": "Boxoffice Pro's last published pre-release forecast range; its midpoint is used for scoring.",
@@ -9,6 +9,7 @@
     "draft": "The Oct 23 films were scored on drafts committed Oct 20 (the one-week lock-in did not run).",
     "provisional": "Graded on a Saturday projection; updated when Sunday estimates or final numbers arrive.",
     "v2": "v1 x 1.37 for non-English films opening in 2,000+ theaters (a blind spot found in the backtest); otherwise equal to v1.",
+    "v3": "v1 stretched upward above $25M (x1.07 at $44M, x1.19 at $100M; unchanged below $25M), because the model under-forecasts big openings.",
     "combined": "Geometric mean of our v1 forecast and Hollywood's midpoint; tests whether the two carry different information.",
     "matched": "Our forecast given Hollywood's range width (same high/low ratio), so 'inside the range' compares aim, not width.",
     "gap_ratio": "Our median miss divided by Hollywood's: how far free public data is from paid tracking (1.0 = level).",
@@ -35,6 +36,18 @@
         "hollywood": 25.4
       },
       "note": "Pre-registered 2026-11-08 (HYPOTHESES.md Amendment 7). Films before this date show v2/Combined as 'retro' only."
+    },
+    "amendment9": {
+      "since": "2026-11-25",
+      "films": 0,
+      "median_miss_pct": {
+        "v1": null,
+        "v3": null,
+        "combined": null,
+        "hollywood": null
+      },
+      "big_films_note": "Backtest 2017-2025: v1 under-forecast 40 of 42 openings above $100M (median x1.76); v3 36 of 42 (x1.62).",
+      "note": "Pre-registered 2026-11-23 (HYPOTHESES.md Amendment 9). Films before Nov 25 show v3 as 'retro' only."
     },
     "amendment8": {
       "since": "2026-11-18",
@@ -114,6 +127,13 @@
         "adjusted": false,
         "basis": "retro"
       },
+      "v3": {
+        "forecast_m": 20.9,
+        "low_m": 8.1,
+        "high_m": 48.8,
+        "factor": 1.0,
+        "basis": "retro"
+      },
       "combined": {
         "forecast_m": 24.2,
         "basis": "retro"
@@ -135,7 +155,8 @@
         "closer": "hollywood",
         "provisional": false,
         "v2_miss_pct": 14.8,
-        "combined_miss_pct": 0.8
+        "combined_miss_pct": 0.8,
+        "v3_miss_pct": 14.8
       },
       "status": "graded",
       "side_case": false
@@ -176,6 +197,13 @@
         "adjusted": false,
         "basis": "retro"
       },
+      "v3": {
+        "forecast_m": 9.8,
+        "low_m": 3.8,
+        "high_m": 22.9,
+        "factor": 1.0,
+        "basis": "retro"
+      },
       "combined": {
         "forecast_m": 8.9,
         "basis": "retro"
@@ -197,7 +225,8 @@
         "closer": "hollywood",
         "provisional": false,
         "v2_miss_pct": 92.6,
-        "combined_miss_pct": 91.9
+        "combined_miss_pct": 91.9,
+        "v3_miss_pct": 92.6
       },
       "status": "graded",
       "side_case": false
@@ -238,6 +267,13 @@
         "adjusted": false,
         "basis": "retro"
       },
+      "v3": {
+        "forecast_m": 10.2,
+        "low_m": 4.0,
+        "high_m": 23.8,
+        "factor": 1.0,
+        "basis": "retro"
+      },
       "combined": {
         "forecast_m": 9.0,
         "basis": "retro"
@@ -259,7 +295,8 @@
         "closer": "ours",
         "provisional": false,
         "v2_miss_pct": 14.7,
-        "combined_miss_pct": 30.0
+        "combined_miss_pct": 30.0,
+        "v3_miss_pct": 14.7
       },
       "status": "graded",
       "side_case": false
@@ -300,6 +337,13 @@
         "adjusted": true,
         "basis": "retro"
       },
+      "v3": {
+        "forecast_m": 13.4,
+        "low_m": 7.6,
+        "high_m": 30.5,
+        "factor": 1.0,
+        "basis": "retro"
+      },
       "combined": {
         "forecast_m": 20.0,
         "basis": "retro"
@@ -321,7 +365,8 @@
         "closer": "hollywood",
         "provisional": false,
         "v2_miss_pct": 66.5,
-        "combined_miss_pct": 53.1
+        "combined_miss_pct": 53.1,
+        "v3_miss_pct": 128.6
       },
       "status": "graded",
       "side_case": false
@@ -362,6 +407,13 @@
         "adjusted": false,
         "basis": "retro"
       },
+      "v3": {
+        "forecast_m": 19.6,
+        "low_m": 11.1,
+        "high_m": 44.4,
+        "factor": 1.0,
+        "basis": "retro"
+      },
       "combined": {
         "forecast_m": 18.5,
         "basis": "retro"
@@ -383,7 +435,8 @@
         "closer": "ours",
         "provisional": false,
         "v2_miss_pct": 2.1,
-        "combined_miss_pct": 8.1
+        "combined_miss_pct": 8.1,
+        "v3_miss_pct": 2.1
       },
       "status": "graded",
       "side_case": false
@@ -424,6 +477,13 @@
         "adjusted": false,
         "basis": "retro"
       },
+      "v3": {
+        "forecast_m": 6.2,
+        "low_m": 2.4,
+        "high_m": 14.5,
+        "factor": 1.0,
+        "basis": "retro"
+      },
       "combined": {
         "forecast_m": 7.0,
         "basis": "retro"
@@ -445,7 +505,8 @@
         "closer": "ours",
         "provisional": false,
         "v2_miss_pct": 4.7,
-        "combined_miss_pct": 15.6
+        "combined_miss_pct": 15.6,
+        "v3_miss_pct": 4.7
       },
       "status": "graded",
       "side_case": true
@@ -486,6 +547,13 @@
         "adjusted": false,
         "basis": "locked"
       },
+      "v3": {
+        "forecast_m": 4.0,
+        "low_m": 1.5,
+        "high_m": 9.2,
+        "factor": 1.0,
+        "basis": "retro"
+      },
       "combined": {
         "forecast_m": 5.3,
         "basis": "locked"
@@ -507,7 +575,8 @@
         "closer": "ours",
         "provisional": false,
         "v2_miss_pct": 6.5,
-        "combined_miss_pct": 29.4
+        "combined_miss_pct": 29.4,
+        "v3_miss_pct": 6.5
       },
       "status": "graded",
       "side_case": false
@@ -548,6 +617,13 @@
         "adjusted": false,
         "basis": "locked"
       },
+      "v3": {
+        "forecast_m": 15.4,
+        "low_m": 8.7,
+        "high_m": 34.9,
+        "factor": 1.0,
+        "basis": "retro"
+      },
       "combined": {
         "forecast_m": 18.6,
         "basis": "locked"
@@ -569,7 +645,8 @@
         "closer": "hollywood",
         "provisional": false,
         "v2_miss_pct": 23.5,
-        "combined_miss_pct": 2.2
+        "combined_miss_pct": 2.2,
+        "v3_miss_pct": 23.5
       },
       "status": "graded",
       "side_case": false
@@ -610,6 +687,13 @@
         "adjusted": false,
         "basis": "locked"
       },
+      "v3": {
+        "forecast_m": 7.3,
+        "low_m": 2.8,
+        "high_m": 17.1,
+        "factor": 1.0,
+        "basis": "retro"
+      },
       "combined": {
         "forecast_m": 7.6,
         "basis": "locked"
@@ -631,7 +715,8 @@
         "closer": "ours",
         "provisional": false,
         "v2_miss_pct": 29.0,
-        "combined_miss_pct": 31.8
+        "combined_miss_pct": 31.8,
+        "v3_miss_pct": 29.0
       },
       "status": "graded",
       "side_case": false
@@ -672,6 +757,13 @@
         "adjusted": false,
         "basis": "locked"
       },
+      "v3": {
+        "forecast_m": 46.8,
+        "low_m": 26.5,
+        "high_m": 106.1,
+        "factor": 1.073,
+        "basis": "retro"
+      },
       "combined": {
         "forecast_m": 69.3,
         "basis": "locked"
@@ -693,7 +785,8 @@
         "closer": "hollywood",
         "provisional": false,
         "v2_miss_pct": 175.2,
-        "combined_miss_pct": 73.2
+        "combined_miss_pct": 73.2,
+        "v3_miss_pct": 156.4
       },
       "status": "graded",
       "side_case": false
@@ -721,6 +814,19 @@
         "forecast_m": 34.4,
         "low_m": 13.3,
         "high_m": 80.3,
+        "model": "catboost_att"
+      }
+    },
+    {
+      "title": "Violent Night 2",
+      "release_date": "2026-12-04",
+      "checkpoint": "T-28",
+      "kind": "draft",
+      "status": "upcoming",
+      "ours": {
+        "forecast_m": 10.1,
+        "low_m": 3.9,
+        "high_m": 23.5,
         "model": "catboost_att"
       }
     }
