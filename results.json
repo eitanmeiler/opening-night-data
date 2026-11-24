@@ -1,7 +1,7 @@
 {
   "project": "Opening Night: what predicts a box office opening now?",
   "author": "Eitan Meiler",
-  "updated_utc": "2026-11-23T18:04:14Z",
+  "updated_utc": "2026-11-24T16:44:00Z",
   "how_to_read": {
     "ours": "Model forecast of the US opening weekend (Fri-Sun incl. previews), locked in before release. The 80% range should contain about 8 of every 10 actual openings.",
     "hollywood": "Boxoffice Pro's last published pre-release forecast range; its midpoint is used for scoring.",
@@ -794,28 +794,102 @@
     {
       "title": "Focker-in-Law",
       "release_date": "2026-11-25",
-      "checkpoint": "T-28",
-      "kind": "draft",
-      "status": "upcoming",
+      "checkpoint": "T-7",
+      "locked_at_utc": "2026-11-24T16:43:18Z",
+      "kind": "locked",
+      "git_commit": "683486f",
       "ours": {
-        "forecast_m": 30.6,
-        "low_m": 11.9,
-        "high_m": 71.6,
-        "model": "catboost_att"
-      }
+        "forecast_m": 22.6,
+        "low_m": 12.8,
+        "high_m": 51.2,
+        "model": "catboost_att",
+        "matched": {
+          "low_m": 19.6,
+          "high_m": 26.1,
+          "width_ratio": 1.33
+        },
+        "days_before": 1
+      },
+      "hollywood": {
+        "source": "Boxoffice Pro",
+        "published": "2026-10-30",
+        "low_m": 30.0,
+        "high_m": 40.0,
+        "mid_m": 35.0,
+        "url": "https://www.boxofficepro.com/long-range-forecast-disneys-hexed-focker-in-law-to-lead-a-quiet-thanksgiving-weekend/",
+        "note": "Long-range 3-day (5-day Wed-Sun $45-65M); date approx; recorded pre-release 2026-11-24 via search snippet. Deadline 2026-11-06: $40-50M 5-day; Variety Thanksgiving preview: $40-45M 5-day",
+        "days_before": 26
+      },
+      "v2": {
+        "forecast_m": 22.6,
+        "low_m": 12.8,
+        "high_m": 51.2,
+        "adjusted": false,
+        "basis": "locked"
+      },
+      "v3": {
+        "forecast_m": 22.6,
+        "low_m": 12.8,
+        "high_m": 51.2,
+        "factor": 1.0,
+        "basis": "locked"
+      },
+      "combined": {
+        "forecast_m": 28.1,
+        "basis": "locked"
+      },
+      "status": "awaiting_results",
+      "side_case": false
     },
     {
       "title": "Hexed",
       "release_date": "2026-11-25",
-      "checkpoint": "T-28",
-      "kind": "draft",
-      "status": "upcoming",
+      "checkpoint": "T-7",
+      "locked_at_utc": "2026-11-24T16:43:18Z",
+      "kind": "locked",
+      "git_commit": "683486f",
       "ours": {
-        "forecast_m": 34.4,
-        "low_m": 13.3,
-        "high_m": 80.3,
-        "model": "catboost_att"
-      }
+        "forecast_m": 19.1,
+        "low_m": 10.8,
+        "high_m": 43.3,
+        "model": "catboost_att",
+        "matched": {
+          "low_m": 16.8,
+          "high_m": 21.7,
+          "width_ratio": 1.29
+        },
+        "days_before": 1
+      },
+      "hollywood": {
+        "source": "Boxoffice Pro",
+        "published": "2026-10-30",
+        "low_m": 35.0,
+        "high_m": 45.0,
+        "mid_m": 40.0,
+        "url": "https://www.boxofficepro.com/long-range-forecast-disneys-hexed-focker-in-law-to-lead-a-quiet-thanksgiving-weekend/",
+        "note": "Long-range 3-day (5-day Wed-Sun $50-70M); date approx; recorded pre-release 2026-11-24 via search snippet. Deadline 2026-11-06: $40-50M 5-day; Variety Thanksgiving preview: $40-45M 5-day; Box Office Theory ~$23M",
+        "days_before": 26
+      },
+      "v2": {
+        "forecast_m": 19.1,
+        "low_m": 10.8,
+        "high_m": 43.3,
+        "adjusted": false,
+        "basis": "locked"
+      },
+      "v3": {
+        "forecast_m": 19.1,
+        "low_m": 10.8,
+        "high_m": 43.3,
+        "factor": 1.0,
+        "basis": "locked"
+      },
+      "combined": {
+        "forecast_m": 27.6,
+        "basis": "locked"
+      },
+      "status": "awaiting_results",
+      "side_case": false
     },
     {
       "title": "Violent Night 2",
@@ -824,9 +898,9 @@
       "kind": "draft",
       "status": "upcoming",
       "ours": {
-        "forecast_m": 10.1,
-        "low_m": 3.9,
-        "high_m": 23.5,
+        "forecast_m": 10.3,
+        "low_m": 4.0,
+        "high_m": 24.1,
         "model": "catboost_att"
       }
     }
