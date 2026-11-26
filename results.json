@@ -1,7 +1,7 @@
 {
   "project": "Opening Night: what predicts a box office opening now?",
   "author": "Eitan Meiler",
-  "updated_utc": "2026-11-24T16:44:00Z",
+  "updated_utc": "2026-11-26T16:37:33Z",
   "how_to_read": {
     "ours": "Model forecast of the US opening weekend (Fri-Sun incl. previews), locked in before release. The 80% range should contain about 8 of every 10 actual openings.",
     "hollywood": "Boxoffice Pro's last published pre-release forecast range; its midpoint is used for scoring.",
@@ -62,11 +62,11 @@
           "hollywood": 1
         },
         "median_miss_pct": {
-          "ours": 175.2,
-          "hollywood": 9.1,
-          "combined": 73.2
+          "ours": 173.7,
+          "hollywood": 8.5,
+          "combined": 72.2
         },
-        "gap_ratio": 19.25,
+        "gap_ratio": 20.44,
         "combined_beats_hollywood": false
       },
       "retro": {
@@ -769,24 +769,24 @@
         "basis": "locked"
       },
       "actual": {
-        "m": 120.0,
-        "theaters": 4108,
-        "status": "sunday_estimate",
-        "source": "Deadline Sunday estimate (via Forbes/Variety; theater count 4,108 per Deadline, Variety says 4,018)",
-        "url": "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/",
-        "as_of": "2026-11-22"
+        "m": 119.319,
+        "theaters": 4018,
+        "status": "bom_actual",
+        "source": "Box Office Mojo (actuals)",
+        "url": "https://www.boxofficemojo.com/weekend/2026W47/",
+        "as_of": "2026-11-26"
       },
       "grade": {
-        "our_miss_pct": 175.2,
-        "hollywood_miss_pct": 9.1,
+        "our_miss_pct": 173.7,
+        "hollywood_miss_pct": 8.5,
         "in_our_range": false,
         "in_hollywood_range": true,
         "in_our_matched_range": false,
         "closer": "hollywood",
         "provisional": false,
-        "v2_miss_pct": 175.2,
-        "combined_miss_pct": 73.2,
-        "v3_miss_pct": 156.4
+        "v2_miss_pct": 173.7,
+        "combined_miss_pct": 72.2,
+        "v3_miss_pct": 155.0
       },
       "status": "graded",
       "side_case": false
